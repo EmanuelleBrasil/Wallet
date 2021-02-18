@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { login } from '../actions';
+import '../style/Login.css';
 
 class Login extends React.Component {
   constructor() {
@@ -49,28 +50,31 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div>
-        <form>
-          <input
-            type="email"
-            data-testid="email-input"
-            placeholder="Insira seu email"
-            onChange={ (event) => this.handleChangeEmail(event) }
-          />
-          <input
-            type="password"
-            data-testid="password-input"
-            placeholder="Insira sua senha"
-            onChange={ (event) => this.handleChangePassword(event) }
-          />
-        </form>
-        <button
-          type="button"
-          disabled={ !this.inputValidation() }
-          onClick={ this.clickButton }
-        >
-          Entrar
-        </button>
+      <div className="login-page">
+        <div className="login-form-container">
+          <form className="login-form">
+            <input
+              type="email"
+              data-testid="email-input"
+              placeholder="Insira seu email"
+              onChange={ (event) => this.handleChangeEmail(event) }
+            />
+            <input
+              type="password"
+              data-testid="password-input"
+              placeholder="Insira sua senha"
+              onChange={ (event) => this.handleChangePassword(event) }
+            />
+          </form>
+          <button
+            type="button"
+            className="login-button"
+            disabled={ !this.inputValidation() }
+            onClick={ this.clickButton }
+          >
+            Entrar
+          </button>
+        </div>
       </div>
     );
   }
