@@ -1,0 +1,29 @@
+.wallet-page {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header {
+  margin: 10px 5px;
+  background-color: antiquewhite;
+  display:flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+}
+
+.expenses-form input {
+  padding: 6px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+.expenses-form select {
+  padding: 6px;
+  margin: 10px;
+  border-radius: 5px;
+}

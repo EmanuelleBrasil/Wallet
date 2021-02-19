@@ -1,0 +1,81 @@
+/* body {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgb(228, 178, 178);
+} */
+
+.login-page {
+  background-image: url(../images/bg-cambio.jpg);
+  display: flex;
+  justify-content: center;
+  width: 640px;
+  height: 360px;
+  margin: auto;
+  align-items: center;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 15px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.login-form input {
+  padding: 6px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.login-form-container button {
+  width: 192px;
+  padding: 6px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.login-button:disabled {
+  /* margin: 10px;
+  padding: 15px 45px; */
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+}
+
+.login-button:enabled {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+  /* margin: 10px;
+  padding: 15px 45px; */
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  display: block;
+ }
+
+/* 
+ .login-button:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ } */

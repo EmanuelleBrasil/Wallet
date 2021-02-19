@@ -19,10 +19,10 @@ class Header extends React.Component {
     const { email, expenses } = this.props;
     // const INITIAL_EXPENSES = 0;
     return (
-      <div>
-        <div data-testid="email-field">{ email }</div>
-        <div data-testid="total-field">{ this.totalExpenses(expenses).toString() }</div>
-        <div data-testid="header-currency-field">BRL</div>
+      <div className="header">
+        <div data-testid="email-field">{ `Usuário: ${email}` }</div>
+        <div data-testid="total-field">{ `Total da despesa: ${this.totalExpenses(expenses).toString()}` }</div>
+        <div data-testid="header-currency-field">Moeda: BRL</div>
       </div>
     );
   }

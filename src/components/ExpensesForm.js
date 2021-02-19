@@ -41,8 +41,8 @@ class ExpensesForm extends React.Component {
     const { value, description, currency, method, tag } = this.state;
     const { currencies } = this.props;
     return (
-      <div>
-        <form>
+      <div className="form-container">
+        <form className="expenses-form">
           <input
             placeholder="valor da despesa"
             data-testid="value-input"
@@ -64,7 +64,7 @@ class ExpensesForm extends React.Component {
             onChange={ this.handleInput }
             data-testid="currency-input"
           >
-            <option value=""> </option>
+            <option value="">Moeda</option>
             {currencies && currencies.map((item) => (
               <option
                 value={ item }
@@ -81,7 +81,7 @@ class ExpensesForm extends React.Component {
             onChange={ this.handleInput }
             data-testid="method-input"
           >
-            <option value=""> </option>
+            <option value="">Método de pagamento</option>
             <option value="Dinheiro">Dinheiro</option>
             <option value="Cartão de crédito">Cartão de crédito</option>
             <option value="Cartão de débito">Cartão de débito</option>
