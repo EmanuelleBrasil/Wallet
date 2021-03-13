@@ -1,18 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 .wallet-page {
   display: flex;
   flex-direction: column;
-
+  min-height: 100vh;
+  margin: auto;
+  background-color: black;
 }
 
 .header {
   margin: 10px 5px;
-  background-color: antiquewhite;
   display:flex;
-  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  justify-content: space-between;
+}
+
+.dados-usuario {
+  align-self: center;
+  width: 50%;
+}
+
+.header img {
+  display: flex;
+  margin-top: 0;
+  align-self: flex-end;
+  max-width: 50vh;
 }
 
 .form-container {
   display: flex;
+  align-items: center;
 }
 
 .expenses-form input {
@@ -21,9 +41,58 @@
   border-radius: 5px;
 }
 
+.form-container button {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+  margin: 10px;
+  padding: 6px 15px;
+  max-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-weight: bold;            
+  box-shadow: 0 0 10px #eee;
+  display: block;
+}
+
+.expenses-table {
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.expenses-table th {
+  border: 1px solid white;
+  background-color: rgb(51, 4, 78);
+  padding: 6px;
+  color: white;
+}
+
+.expenses-table td {
+  border: 1px solid white;
+  padding: 6px;
+}
+
+.expenses-table td button {
+  border: 1px solid white;
+  background-color: rgb(196, 10, 10);
+  color: white;
+}
 
 .expenses-form select {
+  background-color: white;
   padding: 6px;
   margin: 10px;
   border-radius: 5px;
+}
+
+.expenses-table tr:nth-child( even ) {
+  background: rgb(183, 175, 219);
+  color: black;
+}
+
+.expenses-table tr:nth-child( odd ) {
+  background: rgb(238, 238, 238);
+  color: black;
 }

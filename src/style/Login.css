@@ -1,18 +1,13 @@
-/* body {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  background-color: rgb(228, 178, 178);
-} */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 .login-page {
-  background-image: url(../images/bg-cambio.jpg);
+  background-image: url(../images/login-wallet-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  width: 640px;
-  height: 360px;
+  max-width: 100vw;
+  min-height: 100vh;
   margin: auto;
   align-items: center;
 }
@@ -23,9 +18,15 @@
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 200px;
-  background: rgb(0, 0, 0, 0.7);
+  height: 250px;
+  background: rgba(36, 4, 61, 0.8);
   border-radius: 15px;
+}
+
+.login-form-container h2 {
+  margin: 10px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
 }
 
 .login-form {
@@ -47,10 +48,7 @@
   border-radius: 5px;
 }
 
-
 .login-button:disabled {
-  /* margin: 10px;
-  padding: 15px 45px; */
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -62,8 +60,6 @@
 
 .login-button:enabled {
   background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
-  /* margin: 10px;
-  padding: 15px 45px; */
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -73,9 +69,3 @@
   display: block;
  }
 
-/* 
- .login-button:hover {
-   background-position: right center;
-   color: #fff;
-   text-decoration: none;
- } */

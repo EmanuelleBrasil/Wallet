@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import despesas from '../images/despesas.png';
 
 class Header extends React.Component {
   constructor(props) {
@@ -17,12 +18,15 @@ class Header extends React.Component {
 
   render() {
     const { email, expenses } = this.props;
-    // const INITIAL_EXPENSES = 0;
     return (
+      
       <div className="header">
-        <div data-testid="email-field">{ `Usuário: ${email}` }</div>
-        <div data-testid="total-field">{ `Total da despesa: ${this.totalExpenses(expenses).toString()}` }</div>
-        <div data-testid="header-currency-field">Moeda: BRL</div>
+        <div className="dados-usuario">
+          <div data-testid="email-field">{ `Usuário: ${email}` }</div>
+          <div data-testid="total-field">{ `Total da despesa: ${this.totalExpenses(expenses).toString()}` }</div>
+          <div data-testid="header-currency-field">Moeda: BRL</div>
+        </div> 
+        <img src={ despesas } alt="titulo-despesas"/>
       </div>
     );
   }
