@@ -32,3 +32,8 @@ Para realizar a busca de câmbio de moedas, foi utilizada a API do _awesomeapi A
   * Conectar Redux aos componentes React
 
   * Criar actions assíncronas na sua aplicação React que faz uso de Redux.
+
+#Aplicação:
+
+##Link: https://wallet-emanuellebrasil.vercel.app/
+
